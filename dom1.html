@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Manipulation</title>
+</head>
+<body>
+    <p class="c1">this is para 1</p>
+    <p>this is para 2</p>
+    <h3 class="c1">heading 1</h3>
+    <button onclick="display()">click</button>
+
+    <script>
+        function display(){
+            let myobj = document.getElementsByClassName('c1');
+            for(let i in myobj){
+                myobj[i].setAttribute('style', 'background-color:red; color:white')
+            }
+        }
+    </script>
+
+    
+</body>
+</html>

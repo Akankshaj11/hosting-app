@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onload function</title>
+</head>
+<body>
+    <button onclick="addPara()">Add Para</button>
+    <div id="d1">
+
+    </div>
+
+    <script>
+        function addPara(){
+            let ele = document.createElement('p');
+            ele.innerHTML = "demo para"
+            ele.setAttribute('style', 'color:red;')
+            let par = document.querySelector("#d1")
+            par.appendChild(ele)
+            console.log(ele)
+        }
+    </script>
+</body>
+</html>

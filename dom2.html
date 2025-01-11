@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1">this para have id</p>
+    <p class="c1">this para have class c1</p>
+    <p>this para have no id or class</p>
+    <button onclick="abc()">click here</button>
+
+    <script>
+        function abc(){
+            let ele = document.querySelector('.c1').innerHTML
+            console.log(ele);
+        }
+    </script>
+</body>
+</html>
